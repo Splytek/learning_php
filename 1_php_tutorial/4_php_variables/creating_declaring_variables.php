@@ -29,7 +29,7 @@
     <!-- Piensa a las variables como contenedores para almacenar datos -->
 
     <!-- PHP variables -->
-    <!-- Una variable peuede tener un nombre corto (como x & y) o un nombre mas descriptivo (age, carname, total_volume) 
+    <!-- Una variable puede tener un nombre corto (como x & y) o un nombre mas descriptivo (age, carname, total_volume) 
          
     -->
 
