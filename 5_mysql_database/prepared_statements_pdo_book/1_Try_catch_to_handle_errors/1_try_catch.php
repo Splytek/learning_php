@@ -6,11 +6,14 @@ $pass = '';
 $host = 'localhost:3307';
 $db = 'universidad';
 
+//Creamos un variable para guardar los valores que pide PDO
+//Lo guardamos en la variable $dsn
 $dsn = "mysql:host=$host;dbname=$db";
 
 try{
-    $myPDO = new PDO($dsn, $user, $pass);
-    echo "Conexion exitosa";
+    //Agregamos las variable $dsn, seguido de $user y $pass
+    //$myPDO = new PDO($dsn, $user, $pass);
+    //echo "Conexion exitosa";
 } catch(PDOException $e){
     echo "Erro en el codigo " . $e->getMessage();
 }
