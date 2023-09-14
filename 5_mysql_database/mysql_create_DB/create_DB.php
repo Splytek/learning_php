@@ -10,7 +10,7 @@
       $password = ""; //it does not has any password
 
       try{
-        $conn = new PDO("mysql:host=$servername:$port", $username, $password);
+        //$conn = new PDO("mysql:host=$servername:$port", $username, $password);
         // echo "Connection successfully";
 
         //Create a database

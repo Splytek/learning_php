@@ -14,7 +14,7 @@
         $dbname = "alumnos";
 
         try {
-            $conn = new PDO ("mysql:host=$servername:$port;dbname=$dbname", $username, $password);
+            //$conn = new PDO ("mysql:host=$servername:$port;dbname=$dbname", $username, $password);
             //query
             //sql to create table
             $sql = "CREATE TABLE alumnos (

@@ -16,7 +16,7 @@
     //$conexion = new PDO('mysql:host=localhost:3307;dbname=blog_cursos', root, '');
 
     try {
-        $conn = new PDO("mysql:host=$servername:3307;dbname=alumnos", $username, $password);
+        //$conn = new PDO("mysql:host=$servername:3307;dbname=alumnos", $username, $password);
         //connection successfully
         //This show if the connection was successfully
         echo "Connected successfully";

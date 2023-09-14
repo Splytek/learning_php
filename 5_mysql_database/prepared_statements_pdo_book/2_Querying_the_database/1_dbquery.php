@@ -21,7 +21,7 @@ $myOptions = [
 //2. Prepared statements, which offers protecting against SQL injection
 
 try{
-    $myPDO = new PDO($dsn, $user, $pass, $myOptions);
+    //$myPDO = new PDO($dsn, $user, $pass, $myOptions);
     //Test:
     // var_dump($myPDO);
     // echo "<br>";

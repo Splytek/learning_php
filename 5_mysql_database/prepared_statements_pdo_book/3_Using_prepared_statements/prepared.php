@@ -47,8 +47,9 @@ try{
 /* ***************************************************************************************************************** */
 
     //EXTERNAL ID
+    //VARIABLE
     /*Add a variable called $id. Then pass the variable to the "execute" method as an array element */
-    $id = 1; //2
+    $id = 2; //2
 
     //PREPARE
     $sql = $myPDO->prepare('SELECT * FROM notes WHERE id=?');
@@ -62,6 +63,11 @@ try{
     */
 
     //DISPLAY EACH ROW
+    while($row = $sql->fetch()){
+        echo "<h3>" . $row['title'] . "</h3>"; //Do not forget to use quotation marks, as of this is a string variable
+        echo $row['content'] . "<br>";
+        echo $row['date_pub'] . "<br>";
+     }
 
 }catch(PDOException $e){
     echo 'Something went wrong' . $e->getMessage();

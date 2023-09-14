@@ -17,7 +17,7 @@ $myOptions = [
 ];
 
 try{
-    $myPDO = new PDO($dsn, $user, $pass, $myOptions);
+    //$myPDO = new PDO($dsn, $user, $pass, $myOptions);
     //Test
     //var_dump($myPDO); //For testing
     //echo "<br>"
