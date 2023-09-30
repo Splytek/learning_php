@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Texto color blanco en todas partes*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+/*Hacer todo el texto de loslinks negro y sin decoracion*/
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600px;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 30px;
+}
+
+/*Todas las imaganes deben ser del mismo tamano que su companero */
+img {
+    width: 100%;
+}
+
+/*Remover el estilo a los elementos de una lista*/
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/*Aplica el color de fondo, altura y "padding"*/
+.navbar {
+    background-color: purple;
+    height: 70px;
+    padding: 0 30px;
+}
+
+/*Establece el tamaño de la fuente (font size), reduce el peso duente (font-weight)*/
+.navbar h1 {
+    font-size: 30px;
+    font-weight: 300px;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+/*Mostrar ambos elementos hijos dentro del contenedor h1 y nav una al lado del otro usando Flebox*/
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+/*Cambia el color de ambos enlaces a blanco, agrega padding entre si y margen tambien */
+.navbar a {
+    color: white;
+    padding: 9px;
+    margin: 0 10px;
+}
+
+/* SLIDES CONTAINER */
+
+/*Estilos para el contenedor del slideshow */
+.slideshow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+}
+
+/* Estilo para las diapositiva (incialmente ocultas) */
+.mySlides {
+    display: none;
+}
+
+/*Estilo para las imagenes dentro de la diaposiitvas*/
+.mySlides img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 11px 0;
+}
