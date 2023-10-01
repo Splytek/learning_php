@@ -8,7 +8,18 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     font-family: Arial;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
 
 /*Hacer todo el texto de loslinks negro y sin decoracion*/
@@ -19,7 +30,7 @@ a {
 
 h1 {
     font-size: 30px;
-    font-weight: 600px;
+    font-weight: 600;
     margin: 10px 0;
     line-height: 1.2;
 }
@@ -36,63 +47,70 @@ p {
 }
 
 /*Todas las imaganes deben ser del mismo tamano que su companero */
-img {
+/*img {
     width: 100%;
-}
-
+}*/
 /*Remover el estilo a los elementos de una lista*/
 li {
     list-style-type: none;
 }
 
-p {
-    font-size: 20px;
-    margin: 10px 0;
+.logo {
+    color: black;
 }
 
-/*Aplica el color de fondo, altura y "padding"*/
 .navbar {
-    background-color: #D35400;
-    height: 70px;
-    padding: 0 30px;
-}
-
-/*Establece el tamaño de la fuente (font size), reduce el peso duente (font-weight)*/
-.navbar h1 {
-    font-size: 30px;
-    font-weight: 300px;
-    margin: 10px 0;
-    line-height: 1.2;
+    background-color: #FFBF00;
+    color: #fff;
 }
 
 /*Mostrar ambos elementos hijos dentro del contenedor h1 y nav una al lado del otro usando Flebox*/
-.navbar .container {
+.container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribuye el contenido en ambos lados */
+    align-items: center; /* Centra verticalmente los elementos */    
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
     align-items: center;
-    height: 100%;
 }
 
-.navbar ul {
-    display: flex;
+nav a {
+    text-decoration: none;
+    margin-right: 10px;
 }
 
-/*Cambia el color de ambos enlaces a blanco, agrega padding entre si y margen tambien */
-.navbar a {
-    color: white;
-    padding: 9px;
-    margin: 0 10px;
+nav img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+nav a.outline {
+    border: 1px solid #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 /* SLIDES CONTAINER */
-
 /*Estilos para el contenedor del slideshow */
 .slideshow-container{
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 82vh; /* Ajusta la altura según tus necesidades */
-    overflow: hidden;
+    width:1280px;
+    height:480px;
+    overflow:hidden;
+}
+
+.slideshow-container img {
+    width: 970px;
+    height: auto;
 }
 
 /* Estilo para las diapositiva (incialmente ocultas) */
@@ -100,18 +118,10 @@ p {
     display: none;
 }
 
-/*Estilo para las imagenes dentro de la diaposiitvas*/
-.mySlides img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* Estilos para el pie de página */
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #D35400;
+header, footer {
+    background-color: #FFBF00;
     color: #000000;
-    height: 40px;
+    text-align: center;
+    padding: 10px;
 }

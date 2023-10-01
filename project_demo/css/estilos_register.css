@@ -5,7 +5,20 @@
 }
 
 body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     font-family: Arial;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
 
 a {
@@ -26,7 +39,7 @@ li {
 
 /* Estilo del navbar */
 .navbar {
-    background-color: #D35400;
+    background-color: #FFBF00;
     color: #fff;
     padding: 10px 0;
 }
@@ -45,6 +58,11 @@ li {
 .logo {
     font-size: 30px;
     margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /* Estilo de la navegación (por ejemplo, ajusta el espaciado y el color) */
@@ -74,3 +92,9 @@ nav a.outline {
     border-radius: 5px;
 }
 
+header, footer {
+    background-color: #FFBF00;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}
