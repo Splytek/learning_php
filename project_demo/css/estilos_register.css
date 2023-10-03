@@ -11,12 +11,13 @@ body{
     flex-direction: column;
     font-family: Arial;
     min-height: 100vh;
+    margin: 0;
 }
 
 main {
     flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 5px;
 }
@@ -33,6 +34,11 @@ h1 {
     line-height: 1.2;
 }
 
+h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
 li {
     list-style-type: none;
 }
@@ -44,17 +50,64 @@ li {
     padding: 10px 0;
 }
 
-/* Estilo del contenedor para centrar contenido y aplicar Flexbox */
 .container {
     display: flex;
-    justify-content: space-between; /* Distribuye el contenido en ambos lados */
-    align-items: center; /* Centra verticalmente los elementos */
-    max-width: 1200px; /* Ancho máximo del contenido */
-    margin: 0 auto; /* Centra horizontalmente el contenido */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Estilo del logo */
+.container_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_main .container_form {
+    background-color: #f2f2f2;
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    position: relative;
+    padding: 15px;
+    margin: 25px;
+}
+
+.container_form [type=text] {
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.container_form [type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.container_form [type=submit]:hover {
+    background-color: #45a049;
+}
+
 .logo {
     font-size: 30px;
     margin: 0;
@@ -65,27 +118,23 @@ img {
     height: auto;
 }
 
-/* Estilo de la navegación (por ejemplo, ajusta el espaciado y el color) */
 nav {
     display: flex;
-    align-items: center; /* Centra verticalmente los elementos dentro de la navegación */
+    align-items: center;
 }
 
-/* Estilo del icono de perfil de usuario (por ejemplo, ajusta el tamaño) */
 nav img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
 
-/* Estilo de los enlaces de navegación */
 nav a {
     color: #fff;
     text-decoration: none;
     margin-right: 20px;
 }
 
-/* Estilo de los enlaces de navegación con borde */
 nav a.outline {
     border: 1px solid #fff;
     padding: 5px 10px;
@@ -93,6 +142,8 @@ nav a.outline {
 }
 
 header, footer {
+    display: flex;
+    flex: 1;
     background-color: #FFBF00;
     color: #000000;
     text-align: center;
